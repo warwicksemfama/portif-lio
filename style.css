@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sigmar One', sans-serif; /* Define a mesma fonte para tudo */
+    background: #121212;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #9932CC;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    height: 100vh;
+    background: url('f1.png') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Reduz opacidade do fundo */
+    z-index: 1; /* Mantém abaixo do conteúdo */
+}
+
+.hero .content {
+    max-width: 50%;
+    position: relative;
+    z-index: 2; /* Garante que está acima do fundo */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #e6e6e6;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #9932CC;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    line-height: 2; /* Ajusta o espaçamento entre as linhas */
+    color: #cccccc;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9rem;
+}

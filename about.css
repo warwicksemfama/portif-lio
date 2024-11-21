@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sigmar One', sans-serif; /* Define a mesma fonte para tudo */
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: #121212;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #9932CC;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 2rem;
+    background: #121212;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    position: relative;
+}
+
+.about-title {
+    font-size: 4.5rem;
+    color: #9932CC; /* Cor roxa */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    filter: grayscale(100%) brightness(0.7);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
+}
+
+.about-text {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+

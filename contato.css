@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sigmar One', sans-serif; /* Define a mesma fonte para tudo */
+    background: #121212;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #9932CC;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background: #121212;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-header {
+    margin-bottom: 3rem;
+}
+
+.contact-title {
+    font-size: 5rem;
+    color: #9932CC; /* Título roxo */
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: -1.5rem;
+}
+
+/* Contact Box */
+.contact-box {
+    width: 50%; /* Ocupa 50% da largura da tela */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Itens em coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    text-align: center;
+}
+
+.contact-item {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+

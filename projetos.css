@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sigmar One', sans-serif; /* Define "Sigmar One" como a fonte padrão para tudo */
+    background: #121212;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #9932CC;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background: #121212;
+    text-align: center;
+}
+
+.projects-header {
+    margin-bottom: 3rem;
+}
+
+.projects-title {
+    font-size: 5rem;
+    color: #9932CC; /* Título roxo */
+}
+
+.projects-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: -1.5rem;
+}
+
+/* Project Item */
+.project-item {
+    width: 50%; /* Caixa com 50% da largura */
+    margin: 0 auto 2rem; /* Centraliza a caixa horizontalmente e adiciona espaçamento abaixo */
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Alinha conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+}
+
+.project-details {
+    margin-bottom: 1.5rem; /* Espaço entre o texto e a imagem */
+}
+
+.project-number {
+    font-size: 2rem;
+    color: #9932CC; /* Número roxo */
+}
+
+.project-title {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+.project-description {
+    color: #ccc;
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project-stack {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+}
+
+.project-buttons .button {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: #9932CC;
+    margin: 0.5rem; /* Espaço entre os botões */
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.project-buttons .button.secondary {
+    background: #444;
+}
+
+/* Project Image */
+.project-image img {
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+    max-width: 200px; /* Define um limite máximo para o tamanho */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9rem;
+    font-family: 'Bokor', serif; /* Fonte Bokor */
+}
